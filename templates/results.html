@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your AI Mindset — Results</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Your Profile: {{.Profile}}</h1>
+      <div class="advice"><p>{{.Advice}}</p></div>
+
+      <div class="answers">
+        <h3>Your Answers</h3>
+        <ul>
+          <li>Confidence: {{.Conf}}</li>
+          <li>Job Worry: {{.Worry}}</li>
+          <li>Human Skills: {{.Human}}</li>
+        </ul>
+      </div>
+
+      <a class="btn secondary" href="/survey">Try Again</a>
+    </section>
+  </main>
+</body>
+</html>
