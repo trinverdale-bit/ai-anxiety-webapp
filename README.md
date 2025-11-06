@@ -33,32 +33,26 @@ ai-anxiety-webapp/
 git clone https://github.com/<your-username>/ai-anxiety-to-action.git
 cd ai-anxiety-to-action
 go mod tidy
+```
 
-Running
+## Running
 
 Set your API key:
-
-export GROQ_API_KEY=your_key_here
-
+``` export GROQ_API_KEY=your_key_here ```
 
 Start the server:
-
-go run .
+``` go run . ```
 
 
 Or with Air (live reload):
-
-air
+``` air ```
 
 
 Open the app:
-
-http://localhost:8080/survey
+``` http://localhost:8080/survey```
 
 Notes
 
 If the Groq API is unavailable, the app falls back to local guidance.
-
 No database is required; responses are processed in memory.
-
 CSS is minimal for clarity and speed.
